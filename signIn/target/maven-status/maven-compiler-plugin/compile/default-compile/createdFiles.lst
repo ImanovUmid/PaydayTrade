@@ -1,0 +1,6 @@
+com\payday\trade\signIn\repository\UsersRepository.class
+com\payday\trade\signIn\service\UsersServiceImpl.class
+com\payday\trade\signIn\service\UsersService.class
+com\payday\trade\signIn\controller\SignInController.class
+com\payday\trade\signIn\SignInApplication.class
+com\payday\trade\signIn\entity\Users.class

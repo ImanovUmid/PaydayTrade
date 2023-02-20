@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.payday.trade.signUp.service.UsersServiceImplTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.45 s - in com.payday.trade.signUp.service.UsersServiceImplTests
