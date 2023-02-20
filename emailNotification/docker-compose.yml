@@ -1,0 +1,47 @@
+version: '3.9'
+services:
+
+  deposit-cash-ms:
+    image:  imanovumid/depositcash:v0.0.1
+    restart: on-failure
+    ports:
+      - '8083:8083'
+    networks:
+      - ms_network
+  sign-up-ms:
+    image:  imanovumid/signup:v0.0.2
+    restart: on-failure
+    ports:
+      - '8080:8080'
+    networks:
+      - ms_network
+  sign-in-ms:
+      image: imanovumid/signin:v0.0.1
+      restart: on-failure
+      ports:
+        - '8081:8081'
+      networks:
+        - ms_network
+  email-notification-ms:
+       image: imanovumid/emailnotification:v0.0.1
+       restart: on-failure
+       ports:
+        - '8085:8085'
+       networks:
+        - ms_network
+  list-stocks-ms:
+       image: imanovumid/liststocks:v0.0.1
+       restart: on-failure
+       ports:
+        - '8082:8082'
+       networks:
+        - ms_network
+  place-order-ms:
+       image: imanovumid/placeorder:v0.0.1
+       restart: on-failure
+       ports:
+        - '8084:8084'
+       networks:
+        - ms_network
+networks:
+  ms_network:
